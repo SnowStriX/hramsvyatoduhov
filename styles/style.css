@@ -276,8 +276,6 @@ header{
 	width: 480px;
 	height: 400px;
 	z-index: -1;
-	box-shadow: 8px 8px 15px rgba(188,117,85, .3);
-
 }
 .text{
 	backdrop-filter: blur(5px) saturate(70%);
@@ -1321,7 +1319,7 @@ hr{
 	width: 520px;
 	backdrop-filter: blur(5px) saturate(70%);
 	background: rgba(244,233,204, .8);
-	box-shadow: 5px 5px 15px rgba(188,117,85, .13);
+	box-shadow: 5px 5px 10px rgba(188,117,85, .08);
 }
 .container_content .card .text_mobile h3{
 	font-size: 26px;
