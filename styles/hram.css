@@ -175,7 +175,7 @@ footer p{
     justify-content: center;
     align-content: center;
     color: #BC7555;
-    width: 95%;
+    width: 100%;
 }
 .mobile .col_info{
     flex-basis: 80%;
