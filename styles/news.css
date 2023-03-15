@@ -291,6 +291,9 @@ section .card{
 .navbar .links{
 	display: none;
 }
+.navbar {
+    justify-content: space-between;
+}
 .navbar .links li,a{
 	list-style: none;
 	text-decoration: none;

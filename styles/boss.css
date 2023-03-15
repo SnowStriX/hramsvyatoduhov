@@ -190,6 +190,9 @@ footer{
 .navbar .links{
     display: none;
 }
+.navbar {
+    justify-content: space-between;
+}
 .text_school{
     height: 20vw;
 }

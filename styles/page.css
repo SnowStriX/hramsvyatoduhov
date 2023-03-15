@@ -176,6 +176,9 @@ footer p{
 .navbar .toggle_btn{
 	display: block;
 }
+.navbar {
+    justify-content: space-between;
+}
 .navbar .links{
 	display: none;
 } 

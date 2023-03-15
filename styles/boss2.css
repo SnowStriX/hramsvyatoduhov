@@ -168,6 +168,9 @@ footer p{
     font-size: 18px;
     transition: all 0.3s;
 }
+.navbar {
+    justify-content: space-between;
+}
 .navbar .toggle_btn{
     display: block;
 }
