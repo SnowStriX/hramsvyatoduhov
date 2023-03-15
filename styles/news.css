@@ -1,0 +1,406 @@
+  @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: rgba(255, 249, 232, 1) ;
+	font-family: 'EB Garamond', serif;
+}
+
+li{
+	list-style: none ;
+}
+a{
+	text-decoration: none;
+	color: #FFF9E8;
+}
+/* HEADER */
+
+header{
+	position: fixed;
+	background-color: rgba(188, 117, 85, 0.7);
+/*	background: linear-gradient(180deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 100%);*/
+	width: 100%;
+	transition: all 0.2s;
+	z-index: 3;
+}
+.header.active{
+	background-color: rgba(188, 117, 85, 0.8);
+}
+.navbar{
+	width: 100%;
+	height: 60px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	backdrop-filter: blur(10px) saturate(70%);
+	padding: 0 2rem;
+}
+.navbar .toggle_btn{
+	color: #FFF9E8;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+.navbar .toggle_btn{
+	display: none;
+}
+.logo{
+	margin-left: 40px;
+}
+
+.logo img{
+	padding-top: 5px;
+}
+.navbar .links{
+	display: flex;
+	gap: 40px;
+}
+.navbar a{
+	font-size: 1.1vw;
+}
+.header .navbar a:hover{
+	color: #BC7555;
+	transition: all 0.2s;
+}
+.header.active .navbar a:hover{
+	color: white;
+	opacity: 0.5;
+	transition: all .2s;
+}
+/* HEADER */
+/* DROPDOWN MENU*/
+.dropdown_menu {
+	position: absolute;
+	left: 0;
+	top: 60px;
+	height: 0;
+	width: 300px;
+	background: rgba(188, 117, 85, 0.7);
+	backdrop-filter: blur(5px) saturate(70%);
+	overflow: hidden;
+	transition: height 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown_menu li{
+	padding: 10px 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.dropdown_menu.open{
+	height: 270px;
+}
+/* DROPDOWN MENU*/
+.flex_buttons{
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 140px;
+	width: 100%;
+	justify-content: space-around;
+	align-items: center;
+}
+.flex_buttons .button{
+	z-index: 1;
+	position: relative;
+	bottom: -2%;
+}
+.flex_buttons .button a{
+	position: relative;
+	display: inline-block;
+	padding: 10px 20px;
+	color: #BC7555;
+	letter-spacing: 1px;
+	text-decoration: none;
+	overflow:hidden;
+	font-size: 1.5vw;
+	transition: 0.2s;
+	transition: .3s;
+}
+.flex_buttons .button a span{
+	position: absolute;
+	display: block;
+	background:#BC7555;
+}
+.flex_buttons .button a:hover{
+	font-size: 1.8vw;
+}
+.flex_buttons .button a span:nth-child(1) {
+	top: 0;
+	left: 0;
+	width: 50.5%;
+	height: 1.5px;
+	transform: scaleX(0);
+	transition: transform .5s;
+	transform-origin: left;
+}
+.flex_buttons .button a:hover span:nth-child(1){
+	transform: scaleX(1);
+	transform-origin: right;
+}
+.flex_buttons .button a span:nth-child(2) {
+	top: 0;
+	right: 0;
+	width: 50.5%;
+	height: 1.5px;
+	transform: scaleX(0);
+	transition: transform .5s;
+	transform-origin: right;
+}
+.flex_buttons .button a:hover span:nth-child(2){
+	transform: scaleX(1);
+	transform-origin: left;
+}
+.flex_buttons .button a span:nth-child(3) {
+	top: 0;
+	right: 0;
+	width: 1.5px;
+	height: 100%;
+	transform: scaleY(0);
+	transition: transform .5s;
+	transition-delay: .4s;
+	transform-origin: bottom;
+}
+.flex_buttons .button a:hover span:nth-child(3){
+	transform: scaleX(1);
+	transform-origin: top;
+}
+.flex_buttons .button a span:nth-child(4) {
+	top: 0;
+	left: 0;
+	width: 1.5px;
+	height: 100%;
+	transform: scaleY(0);
+	transition: transform .5s;
+	transition-delay: .4s;
+	transform-origin: bottom;
+}
+.flex_buttons .button a:hover span:nth-child(4){
+	transform: scaleX(1);
+	transform-origin: top;
+}
+.flex_buttons .button a span:nth-child(5) {
+	left: 0;
+	bottom: 0;
+	width: 50.5%;
+	height: 1.5px;
+	transform: scaleX(0);
+	transition: transform .5s;
+	transition-delay: .8s;
+	transform-origin: right;
+}
+.flex_buttons .button a:hover span:nth-child(5){
+	transform: scaleX(1);
+	transform-origin: left;
+}
+.flex_buttons .button a span:nth-child(6) {
+	right: 0;
+	bottom: 0;
+	width: 50.5%;
+	height: 1.5px;
+	transform: scaleX(0);
+	transition: transform .5s;
+	transition-delay: .8s;
+	transform-origin: left;
+}
+.flex_buttons .button a:hover span:nth-child(6){
+	transform: scaleX(1);
+	transform-origin: right;
+}
+section{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.card{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	width: 560px;
+	height: 820px;
+	display: ;
+}
+.card .img{
+	top: 5%;
+	position: relative;
+	width: 430px;
+	height: auto;
+}
+.card .img img{
+	width: 100%;
+	box-shadow:10px 10px 30px rgba(188, 117, 85, 0.6);
+}
+.card .content{
+	padding: 4% 8%;
+	width: 86%;
+	color: #BC7555;
+	background-color: rgba(244, 233, 204, 0.76);
+	box-shadow: 10px 10px 30px rgba(188, 117, 85, 0.26);
+	backdrop-filter: blur(10px) saturate(70%)
+}
+.card .content h4{
+	font-size: 1.9vw;
+	font-weight: 400;
+}
+.card .content a{
+	color:#BC7555;
+	transition: all .3s;
+}
+.card .content a:hover{
+	color:#BC9666;
+}
+.card .content p{
+	padding-top: 10%;
+	font-size: 1.3vw;
+}
+footer{
+	height:100px;
+	color: #BC7555;
+	font-size: 1.2vw;
+	background-color: #FFF9E8;
+	border-top: 1px solid #BC7555;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+footer p{
+	text-align: center;	
+}
+
+@media (max-width: 1441px) {
+.flex_buttons{
+	padding-top: ;
+}
+section .card{
+    margin-top: -8%;
+    margin-bottom: -8%;
+}
+
+}
+
+
+
+
+@media (max-width: 1199px){ 
+.navbar .toggle_btn{
+	display: block;
+}
+.navbar .links{
+	display: none;
+}
+.navbar .links li,a{
+	list-style: none;
+	text-decoration: none;
+	color: #FFF9E8;
+	font-size: 16px;
+	transition: all 0.3s;
+}
+.dropdown_menu{
+	display: block;
+}
+.flex_buttons{
+	padding-top: 80px;
+}
+.flex_buttons .button a{
+	font-size: 18px;
+}
+.flex_buttons .button a:hover{
+	font-size: 20px;
+}
+.card{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	width: 560px;
+	height: 820px;
+	display: ;
+}
+.card .img{
+	top: 5%;
+	position: relative;
+	width: 430px;
+	height: auto;
+}
+.card .img img{
+	width: 100%;
+	box-shadow:10px 10px 30px rgba(188, 117, 85, 0.6);
+}
+.card .content{
+	padding: 4% 8%;
+	width: 86%;
+	color: #BC7555;
+	background-color: rgba(244, 233, 204, 0.76);
+	box-shadow: 10px 10px 30px rgba(188, 117, 85, 0.26);
+	backdrop-filter: blur(10px) saturate(70%)
+}
+.card .content h4{
+	font-size: 24px;
+	font-weight: 400;
+}
+.card .content p{
+	padding-top: 10%;
+	font-size: 18px;
+}
+footer{
+	color: #BC7555;
+	font-size: 16px;
+	background-color: #FFF9E8;
+	border-top: 1px solid #BC7555;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+}
+
+
+
+
+@media (max-width: 535px){
+.card{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	width: 100%;
+	height: 820px;
+	display: ;
+}
+.card .img{
+	top: 5%;
+	position: relative;
+	width: 80%;
+	height: auto;
+}
+.card .img img{
+	width: 100%;
+	box-shadow:10px 10px 30px rgba(188, 117, 85, 0.6);
+}
+.card .content{
+	padding: 4% 8%;
+	width: 86%;
+	color: #BC7555;
+	background-color: rgba(244, 233, 204, 0.76);
+	box-shadow: 10px 10px 30px rgba(188, 117, 85, 0.26);
+	backdrop-filter: blur(10px) saturate(70%)
+}
+.card .content h4{
+	font-size: 24px;
+	font-weight: 400;
+}
+.card .content p{
+	padding-top: 10%;
+	font-size: 18px;
+}
+section{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+}
