@@ -2,24 +2,6 @@ window.addEventListener("scroll", function(){
       var header = document.querySelector("header",);
       header.classList.toggle("active",window.scrollY > 0);
     });
-jQuery(function($){
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
-
-  effect: 'fade',
-
-  spaceBetween: 20,
-
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
-    clickable: true,
-    dynamicBullets: true,
-  },
-});
- });
 
 const swiper = new Swiper('.swiper', {
   // Optional parameters
