@@ -43,6 +43,9 @@ header{
 .navbar .toggle_btn{
 	display: none;
 }
+.logo{
+	margin-left: 40px;
+}
 .logo img{
 	width: 100%;
 	height: 60px;
