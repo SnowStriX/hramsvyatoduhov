@@ -3,23 +3,6 @@ window.addEventListener("scroll", function(){
       header.classList.toggle("active",window.scrollY > 0);
     });
 
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
-
-  effect: 'fade',
-
-  spaceBetween: 20,
-
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
-    clickable: true,
-    dynamicBullets: true,
-  },
-});
-
 const toggleBtn = document.querySelector('.toggle_btn')
     const toggleBtnIcon = document.querySelector('.toggle_btn i')
     const DropDownMenu = document.querySelector('.dropdown_menu')
@@ -49,3 +32,20 @@ let elements = document.querySelectorAll('.element-animation');
 for (let elm of elements) {
   observer.observe(elm);
 }
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  effect: 'fade',
+
+  spaceBetween: 20,
+
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true,
+    dynamicBullets: true,
+  },
+});
