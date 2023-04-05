@@ -1166,6 +1166,7 @@ hr{
 	display: flex;
 	flex-direction: column;
 	width: 40%;
+	margin-top: 25px;
 	justify-content: center;
 }
 .grid-wrapper .col1, .col2 ,.col3{
