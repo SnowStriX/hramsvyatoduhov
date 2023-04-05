@@ -1162,11 +1162,13 @@ hr{
 	vertical-align: middle;
 	display: inline-block;
 }
+.school_paraklit-mobile .grid-wrapper{
+	margin-top: 25px;
+}
 .grid-wrapper{
 	display: flex;
 	flex-direction: column;
 	width: 40%;
-	margin-top: 25px;
 	justify-content: center;
 }
 .grid-wrapper .col1, .col2 ,.col3{
