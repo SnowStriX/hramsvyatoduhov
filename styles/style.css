@@ -1165,7 +1165,7 @@ hr{
 .grid-wrapper{
 	display: flex;
 	flex-direction: column;
-	width: 65%;
+	width: 40%;
 	justify-content: center;
 }
 .grid-wrapper .col1, .col2 ,.col3{
@@ -1576,6 +1576,7 @@ hr{
 	font-size: 20px;
 	color: #BC7555;
 }
+
 .section1.mobile{
 	display: flex;
 }
@@ -2135,5 +2136,29 @@ hr{
 	width: 90%;
 
 	padding: 30px 40px;
+}
+.school_paraklit-mobile .container_sch {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 2% 0;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.text_oldschool {
+    width: 85%;
+    color: #BC7555;
+    margin-left: 4%;
+    font-size: calc( (100vw - 480px)/(1280 - 480) * (26 - 16) + 16px);
+}
+.grid-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    justify-content: center;
+    margin: 0 auto;
 }
 }
